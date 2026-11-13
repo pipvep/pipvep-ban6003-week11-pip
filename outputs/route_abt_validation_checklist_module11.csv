@@ -1,0 +1,9 @@
+check,result,status,notes
+Duplicate route keys (origin + dest),0,Pass,Each route appears once
+"Missing key values (origin, dest)",0,Pass,Every row has both key values
+Missing ABT cells (all columns),25,Documented,25 missing cells: 7 routes lack destination lookup details; EWR-LGA lacks delay and air-time measures.
+"Nonpositive flight counts, distances and air times",0,Pass,No nonpositive values found.
+Routes with a negative max_arr_delay,4,Documented,"4 one-flight routes; their recorded flights arrived early, as noted in the dictionary."
+Missing target values (avg_arr_delay),1,Documented,1 missing target for EWR-LGA; its only flight was cancelled.
+ABT columns without a dictionary row,0,Pass,Every ABT column has a dictionary row.
+Blank data dictionary cells,0,Pass,All dictionary fields are completed.
